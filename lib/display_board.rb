@@ -2,21 +2,12 @@
 # out the current state
 
 
-def display_board (board = ["   ", "   ","   ","   ","   ","   ","   ","   ","   "])
-puts "#{board[0]}|#{board[1]}|#{board[2]}"
+def display_board (board = ["X", " "," "," "," "," "," "," "," "])
+puts " #{board[0]} | #{board[1]} | #{board[2]} "
 puts "-----------"
-puts "#{board[3]}|#{board[4]}|#{board[5]}"
+puts " #{board[3]} | #{board[4]} | #{board[5]} "
 puts "-----------"
-puts "#{board[6]}|#{board[7]}|#{board[8]}"
+puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-display_board
-
-board = ["   ","   ","   ","   "," X ","   ","   ","   ","   "]
-display_board (board)
-
-board = ["   ","   ","   ","   "," X ","   ","   ","   "," O "]
-display_board (board)
-
-board = [" X ","   ","   ","   "," X ","   ","   ","   "," O "]
-display_board (board)
+display_board(turn_1)
